@@ -121,8 +121,10 @@ var barbershopsView = function(id, barbershops, photos, rating) {
             <div class="card-body">
         ${photos ? `<img src="${photos[0].url}">` : ``}
         <h5 class="card-title">${barbershops}</h5>
-        <p class="card-text">Rating</p>
-        <p><u><strong>${rating}</p></u></strong>
+        <br>
+        <p class="card-text">
+        <p><u><strong>Rating</p></u></strong>
+        <p>${rating}</p>
         <button type="button" class="btn btn-dark"><a href="index.html?id=${id}">Details</button></a>
      </div>
     </div>
@@ -148,7 +150,7 @@ var barbershopsView = function(id, barbershops, photos, rating) {
     </div>
     <div class="layout">
     ${photos ? `<img src="${photos[0].url}">` : ``}
-    <div class="card border-danger mb-3" style="max-width: 18rem;">
+    <div class="card border-danger mb-3" style="height: 768px; max-width: 18rem;">
     <div class="card-header"><h3><strong>${barbershops}</strong></h3>
     <div class="card-body text-danger">
     <p class="card-text">
@@ -167,6 +169,9 @@ var barbershopsView = function(id, barbershops, photos, rating) {
     </div>
     </div>
     </div>
+    <br>
+    <br>
+    <br>
     `;
   } 
 
